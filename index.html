@@ -1,12 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main Menu</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .menubutton {
+            margin: 10px;
+            padding: 15px;
+            font-size: 16px;
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+        }
+    </style>
 </head>
+
 <body>
-    <p>helo i am poopooface</p>
+
+    <h1>Main Menu</h1>
+
+    <button class="menubutton" onclick="openTimetable()">Open Timetable</button>
+    <button class="menubutton" onclick="openShoppingCart()">Open Shopping Cart</button>
+
+    <script>
+        function openTimetable() {
+            window.open("timetable.html");
+        }
+
+        function openShoppingCart() {
+            window.open("cart.html");
+        }
+    </script>
 </body>
+
 </html>
